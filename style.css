@@ -1,3 +1,158 @@
-#cvphoto{
-    width: 100px;
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#nav{
+    width: 100%;
+    height: 200px;
+}
+#home{
+    width: 60px;
+    height: 60px;
+    transition: transform .2s;
+}
+#home:hover{
+    transform:scale(1.1);
+}
+#homebutton{
+    padding: 20px;
+    float: left;
+}
+#right-nav-buttons{
+    float: right;
+    padding: 20px;
+}
+.buttonbutton {
+    border-radius: 30px;
+    background-color:white; /* Green */
+    color: dodgerblue;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid dodgerblue;
+    transition: 0.3s;
+
+}
+.buttonbutton:hover{
+    color: white;
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    transform:scale(1.1)
+
+}
+#center-div{
+    text-align: center;
+}
+h3{
+    font-weight: lighter;
+}
+#icon{
+    width: 250px;;
+}
+#hardware{
+    width: 400px;;
+}
+#description{
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    background-color: dodgerblue;
+    padding-top:150px;
+    color: white;
+    position: absolute;
+    z-index: -1;
+    
+}
+#tablediv{
+    width: 300px;
+    background-color: white;
+    height: 600px;
+    z-index: 9;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    border:1px solid rgb(213, 210, 210);
+    border-radius: 10px;
+    margin-top: 450px;
+    padding: 20px;
+}
+.tables{
+    float: left;
+    z-index:10;
+    width: 33%;
+    height:600px;
+}
+#projects{
+    text-align: center;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.job_desc_colour{
+    color: dodgerblue;
+}
+.projects_blocks{
+    width: 413px;
+    height: 276px;
+    padding-top: 20px;
+    float:left;
+    padding-bottom: 20px;
+}
+.project_blocks_left{
+    padding-left:70px;
+    padding-right:10px;
+}
+.project_blocks_right{
+    padding-right:70px;
+    padding-left:10px;
+}
+.project_blocks_center{
+    padding-left:10px;
+    padding-right:10px;
+}
+.projects_blocks_img{
+    width: 413px;
+    height: 276px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border-style: none;
+    opacity:1;
+    transition: transform .2s;
+}
+
+.projects_blocks_img:hover{
+    transform: scale(1.05);
+}
+#footer{
+    clear:both;
+    background-color: dodgerblue;
+    height: 200px;
+    color: white;
+    text-align: center;
 }
