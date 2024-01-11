@@ -92,6 +92,7 @@ h3{
 }
 #projects{
     text-align: center;
+    justify-content: center;
 }
 .material-symbols-outlined {
   font-variation-settings:
@@ -123,19 +124,10 @@ h3{
     padding-top: 20px;
     float:left;
     padding-bottom: 20px;
+    padding-left:20px;
+    padding-right:20px;
 }
-.project_blocks_left{
-    padding-left:70px;
-    padding-right:10px;
-}
-.project_blocks_right{
-    padding-right:70px;
-    padding-left:10px;
-}
-.project_blocks_center{
-    padding-left:10px;
-    padding-right:10px;
-}
+
 .projects_blocks_img{
     width: 413px;
     height: 276px;
