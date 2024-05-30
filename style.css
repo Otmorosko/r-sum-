@@ -72,9 +72,11 @@ h3 {
 
 #icon {
     width: 250px;
-    transform: scale(1.2);
 }
 
+#icon:hover{
+    transform: scale(1.1);
+}
 #hardware {
     width: 400px;
 }
