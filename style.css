@@ -105,6 +105,7 @@ h3 {
     justify-content: space-between;
     gap: 20px;
     overflow: hidden;
+    box-shadow: -5px 5px 15px black;
 }
 
 #tablediv > .tables {
