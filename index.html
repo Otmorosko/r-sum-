@@ -18,18 +18,22 @@
             position: absolute;
             top: 50px;
             right: 20px;
-            padding: 10px;
+            padding: 15px;
             background-color: white;
             border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
             z-index: 10;
+            width: 250px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
         }
         .popup::before {
             content: '';
             position: absolute;
             top: -10px;
-            right: 10px;
+            right: 20px;
             border-width: 10px;
             border-style: solid;
             border-color: transparent transparent white transparent;
@@ -146,26 +150,25 @@
 
     <!-- Popup element -->
     <div class="popup" id="popup">
-        <p>Did you know? The first computer programmer was Ada Lovelace, who lived in the 19th century!</p>
+        <p id="popupContent"></p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
-            // Pokaż dymek z ciekawostką po kliknięciu przycisku
-            $("#otherButton").click(function(){
-                $("#popup").fadeIn(300).delay(3000).fadeOut(300);
-            });
+            const facts = [
+                "Did you know? The first computer programmer was Ada Lovelace, who lived in the 19th century!",
+                "Fun fact: The first ever computer virus was created in 1983 and was called the 'Elk Cloner'.",
+                "Did you know? The first 1GB hard disk drive was announced in 1980, which weighed over 500 pounds and cost $40,000.",
+                "Fun fact: The first website ever created is still online. You can visit it at info.cern.ch.",
+                "Did you know? The term 'debugging' came from an actual bug (a moth) being removed from a computer."
+            ];
 
-            // Prosta animacja fade in/out
-            $("#icon").hover(
-                function(){
-                    $(this).fadeOut(200);
-                },
-                function(){
-                    $(this).fadeIn(200);
-                }
-            );
+            $('#otherButton').click(function(){
+                const randomFact = facts[Math.floor(Math.random() * facts.length)];
+                $('#popupContent').text(randomFact);
+                $('#popup').fadeIn(200).delay(3000).fadeOut(200);
+            });
         });
     </script>
 </body>
