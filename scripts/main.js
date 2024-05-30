@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('.projects_blocks').each(function() {
+        $(this).css('position', 'relative');
         $(this).append('<div class="overlay">Placeholder</div>');
     });
 
