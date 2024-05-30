@@ -97,7 +97,7 @@ h3 {
 }
 
 #typingH1 {
-    animation: grow 5s steps(30) forwards;
+    animation: grow 2s steps(50) forwards;
     overflow: hidden;
     white-space: nowrap;
     width: 11ch;
