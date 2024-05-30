@@ -106,6 +106,7 @@ h3 {
     gap: 20px;
     overflow: hidden;
     box-shadow: -5px 5px 15px black;
+    backdrop-filter: blur(2px);
 }
 
 #tablediv > .tables {
