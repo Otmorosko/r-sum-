@@ -117,7 +117,7 @@ h3 {
 }
 
 #tablediv {
-    background-color: rgba(255, 255, 255,);
+    background-color: rgba(255, 255, 255, 1);
     width: 80vw;
     z-index: 9;
     text-align: center;
@@ -132,6 +132,7 @@ h3 {
     gap: 20px;
     overflow: hidden;
     box-shadow: -5px 5px 15px black;
+
 }
 
 #tablediv > .tables {
