@@ -214,6 +214,7 @@ h3 {
     text-align: center;
     margin-top: 50px;
     padding: 20px;
+    backdrop-filter: blur(2px);
 }
 
 .normalText{
