@@ -1,10 +1,4 @@
 $(document).ready(function() {
-    $('.projects_blocks').each(function() {
-        $(this).css('position', 'relative');
-        $(this).append('<div class="overlay">Placeholder</div>');
-    });
-
-    // Kod do popupów z ciekawostkami i formularzem wysyłki e-maila
     var facts = [
         "Did you know? The first computer virus was created in 1983.",
         "Did you know? JavaScript was created in just 10 days.",
@@ -31,3 +25,4 @@ $(document).ready(function() {
         $("#emailPopup").fadeOut();
     });
 });
+
