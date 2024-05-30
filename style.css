@@ -97,10 +97,10 @@ h3 {
 }
 
 #typingH1 {
-    animation: grow 3s steps(11) forwards;
+    animation: grow 4s steps(30) forwards;
     overflow: hidden;
     white-space: nowrap;
-    width: 11ch;
+    width: 25ch;
     display: inline-block;
     font-size: 2rem;
     position: relative;
@@ -110,7 +110,7 @@ h3 {
 
 @keyframes grow {
     from { width: 0; }
-    to { width: 11ch; }
+    to { width: 25ch; }
 }
 
 #tablediv {
