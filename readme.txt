@@ -43,8 +43,8 @@ Podział CSS:
 JavaScript:
 - Projekt używa jQuery do obsługi interaktywnych elementów, takich jak popupy i wysyłanie formularza.
 - main.js zawiera następującą funkcjonalność:
-  - Wyświetla losowe ciekawostki dotyczące kodowania w popupie po kliknięciu przycisku "The Other Button".
-  - Wyświetla formularz e-mail w popupie po kliknięciu przycisku "Say Hello".
+  - Wyświetla losowe ciekawostki dotyczące kodowania w popupie po kliknięciu przycisku "Random Fun-Fact".
+  - Wyświetla formularz e-mail w popupie po kliknięciu przycisku "Send me an e-mail".
   - Obsługuje zamykanie popupów.
 
 Biblioteki i Frameworki:
