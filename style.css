@@ -104,7 +104,7 @@ h3 {
     display: inline-block;
     font-size: 2rem;
     position: relative;
-    top: 40%; /* Zmieniona wartość, aby tekst wyświetlał się wyżej */
+    top: 30%; 
     transform: translateY(-50%);
 }
 
