@@ -75,7 +75,7 @@ h3 {
     transition: transform .2s;
 }
 
-#icon:hover{
+#icon:hover {
     transform: scale(1.1);
 }
 
@@ -94,13 +94,15 @@ h3 {
     border-radius: 10px;
     padding-top: 50px;
     box-shadow: -5px 5px 15px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #typingH1 {
     overflow: hidden;
     white-space: nowrap;
     border-right: 0.15em solid orange;
-    width: 0;
     animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
 }
 
@@ -115,7 +117,7 @@ h3 {
 }
 
 #tablediv {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8); /* półprzezroczyste tło */
     width: 80vw;
     z-index: 9;
     text-align: center;
@@ -131,6 +133,7 @@ h3 {
     overflow: hidden;
     box-shadow: -5px 5px 15px black;
     backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px); /* Prefiks dla przeglądarek opartych na Webkit */
 }
 
 #tablediv > .tables {
