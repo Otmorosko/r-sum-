@@ -1,0 +1,160 @@
+#center-div {
+    text-align: center;
+}
+
+#icon {
+    width: 250px;
+    transition: transform .2s;
+}
+
+#icon:hover {
+    transform: scale(1.1);
+}
+
+#hardware {
+    width: 400px;
+}
+
+#description {
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    background-color: dodgerblue;
+    color: white;
+    position: absolute;
+    z-index: -1;
+    border-radius: 10px;
+    padding-top: 50px;
+    box-shadow: -5px 5px 15px black;
+}
+
+#typingH1 {
+    animation: grow 4s steps(40) forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 30ch;
+    display: inline-block;
+    font-size: 2rem;
+    position: relative;
+    top: 30%; 
+    transform: translateY(-50%);
+}
+
+@keyframes grow {
+    from { width: 0; }
+    to { width: 30ch; }
+}
+
+#tablediv {
+    background-color: white;
+    width: 80vw;
+    z-index: 9;
+    text-align: center;
+    margin: auto;
+    border: 1px solid rgb(213, 210, 210);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: hidden;
+    box-shadow: -5px 5px 15px black;
+    margin-top: 200px;
+}
+
+#tablediv > .tables {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: normal;
+    min-width: 250px;
+    position: relative;
+    font-size: 1rem;
+}
+
+#tablediv > .tables:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 1px;
+    background: rgb(213, 210, 210);
+}
+
+@media (max-width: 1200px) {
+    #tablediv > .tables {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    #tablediv {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #tablediv > .tables {
+        flex: 1 1 100%;
+    }
+    #tablediv > .tables::before {
+        display: none;
+    }
+}
+
+.tables {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.tables_h2 {
+    font-size: 1.5rem;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.projects_titles {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.projects_blocks {
+    width: 413px;
+    height: 276px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.projects_blocks_img {
+    width: 413px;
+    height: 276px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border-style: none;
+    opacity: 1;
+    transition: transform .2s;
+}
+
+.projects_blocks_img:hover {
+    transform: scale(1.05);
+}
+
+#footer {
+    clear: both;
+    background-color: dodgerblue;
+    height: 200px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    box-shadow: -5px 5px 15px black;
+}

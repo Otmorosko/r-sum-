@@ -1,0 +1,21 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.normalText {
+    font-family: 'Poppins', sans-serif;
+}
