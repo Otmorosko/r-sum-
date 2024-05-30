@@ -118,6 +118,9 @@
     justify-content: space-evenly;
     gap: 20px;
 }
+#myPortfolioH1{
+    margin-top:10px;
+}
 
 .projects_titles {
     text-align: center;
