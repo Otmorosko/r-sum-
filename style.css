@@ -89,37 +89,39 @@ h3 {
     height: 300px;
     background-color: dodgerblue;
     color: white;
-    position: absolute;
-    z-index: 1;
+    position: relative;
+    z-index: 10;
     border-radius: 10px;
     padding-top: 50px;
     box-shadow: -5px 5px 15px black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: calc(60% - 150px); /* Wchodzi w 40% wysokości divu poniżej */
 }
 
 #typingH1 {
+    animation: grow 3s steps(30) forwards;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 3.5s steps(30, end) forwards;
+    width: 11ch;
+    display: inline-block;
+    font-size: 2rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+@keyframes grow {
+    from { width: 0; }
+    to { width: 11ch; }
 }
 
 #tablediv {
     background-color: white;
     width: 80vw;
-    z-index: 0;
+    z-index: 9;
     text-align: center;
     margin: auto;
     border: 1px solid rgb(213, 210, 210);
     border-radius: 10px;
-    margin-top: 200px;
+    margin-top: 150px;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -128,6 +130,7 @@ h3 {
     overflow: hidden;
     box-shadow: -5px 5px 15px black;
     position: relative;
+    top: -120px;
 }
 
 #tablediv > .tables {
