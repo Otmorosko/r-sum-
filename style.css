@@ -94,18 +94,28 @@ h3 {
     border-radius: 10px;
     padding-top: 50px;
     box-shadow: -5px 5px 15px black;
-    
 }
 
-#typingH1{
-    animation: grow 3s steps(11) forwards;
+#typingH1 {
     overflow: hidden;
     white-space: nowrap;
-    width: 11ch;
+    border-right: 0.15em solid orange;
+    width: 0;
+    animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
 }
 
 #tablediv {
-    background-color: rgba(255, 255, 255, 0.8); /* półprzezroczyste tło */
+    background-color: rgba(255, 255, 255, 0.8);
     width: 80vw;
     z-index: 9;
     text-align: center;
@@ -121,7 +131,7 @@ h3 {
     overflow: hidden;
     box-shadow: -5px 5px 15px black;
     backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px); /* Prefiks dla przeglądarek opartych na Webkit */
+    -webkit-backdrop-filter: blur(2px); 
 }
 
 #tablediv > .tables {
