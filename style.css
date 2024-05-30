@@ -100,7 +100,7 @@ h3 {
     animation: grow 4s steps(32) forwards;
     overflow: hidden;
     white-space: nowrap;
-    width: 25ch;
+    width: 27ch;
     display: inline-block;
     font-size: 2rem;
     position: relative;
